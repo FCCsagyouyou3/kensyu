@@ -28,7 +28,16 @@
   <body>
     <div id="cesiumContainer"></div>
     <script>
-      const viewer = new Cesium.Viewer("cesiumContainer");
+      const viewer = new Cesium.Viewer("cesiumContainer",{
+	baseLayerPicker: true,
+	timeline : ture,
+	animation : true,
+	homeButton: true,
+	vrButton: false,
+	geocoder: true,
+	sceneModePicker: true,
+	navigationHelpButton: true
+       });
     </script>
   </body>
 </html>
